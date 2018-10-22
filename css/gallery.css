@@ -1,0 +1,82 @@
+body {
+    background-color: #666;
+    color: #ddd;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+a, a:visited {
+    color: #9EB4CA;;
+    text-decoration: none;
+}
+
+h1, h2, h3, footer, .gallery {
+    text-align: center;
+}
+
+pre {
+    width: 340px;
+    margin: 0 auto;
+    border: dashed 1px #aaa;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    pre {
+        max-width: 98%;
+    }
+}
+
+header, footer {
+    display: block;
+    padding: .2em 0;
+    background-color: #555;
+    box-shadow: 0 0 8px #222;
+}
+
+footer {
+    margin-top: 1.5em;
+}
+
+.content {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.gallery:after {
+    content: '';
+    display: block;
+    height: 2px;
+    margin: .5em 0 1.4em;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery img {
+    height: 100%;
+}
+
+.gallery a {
+    width: 240px;
+    height: 180px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 4px 6px;
+    box-shadow: 0 0 4px -1px #000;
+}
+
+.ribbon > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .sm-hidden {
+        display: none;
+    }
+}
+
+/* Highlight.js Tomorrow Night style */
+.hljs-comment,.hljs-quote{color:#969896}.hljs-deletion,.hljs-name,.hljs-regexp,.hljs-selector-class,.hljs-selector-id,.hljs-tag,.hljs-template-variable,.hljs-variable{color:#c66}.hljs-tag {color: #f8f8f2}.hljs-built_in,.hljs-builtin-name,.hljs-link,.hljs-literal,.hljs-meta,.hljs-number,.hljs-params,.hljs-type{color:#de935f}.hljs-attr{color:#f0c674}.hljs-addition,.hljs-bullet,.hljs-string,.hljs-symbol{color:#b5bd68}.hljs-section,.hljs-title{color:#81a2be}.hljs-keyword,.hljs-selector-tag{color:#b294bb}.hljs{display:block;overflow-x:auto;background:#1d1f21;color:#c5c8c6;padding:.8em}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}

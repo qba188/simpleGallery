@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simple Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/baguetteBox.css">
+
+</head>
+
+<body>
+<div class="content">
+	<h1>Galeria 1</h1>
+	<div class="baguetteBoxOne gallery">
+			<a href="img/1.jpg" title="Bubble">
+				<img src="img/1.jpg" alt="Bubble">
+			</a>
+			<a href="img/2.jpg" title="Leaves of the trees">
+				<img src="img/2.jpg" alt="Leaves of the trees">
+			</a>
+			<a href="img/3.jpg" title="Diver">
+				<img src="img/3.jpg" alt="Diver">
+			</a>
+			<a href="img/4.jpg" title="Grass">
+				<img src="img/4.jpg" alt="Grass">
+			</a>
+			<a href="img/5.jpg" title="Tree">
+				<img src="img/5.jpg" alt="Tree">
+			</a>
+			<a href="img/6.jpg" title="Flowers">
+				<img src="img/6.jpg" alt="Flowers">
+			</a>
+			<a href="img/7.jpg" title="Flowers 2">
+				<img src="img/7.jpg" alt="Flowers 2">
+			</a>
+			<a href="img/4.jpg" title="Grass">
+				<img src="img/4.jpg" alt="Grass">
+			</a>
+	</div>
+</div>
+<div class="content">
+	<h1>Galeria 2</h1>
+	<div class="baguetteBoxOne gallery">
+			<a href="img/1.jpg" title="Bubble">
+				<img src="img/1.jpg" alt="Bubble">
+			</a>
+			<a href="img/2.jpg" title="Leaves of the trees">
+				<img src="img/2.jpg" alt="Leaves of the trees">
+			</a>
+			<a href="img/3.jpg" title="Diver">
+				<img src="img/3.jpg" alt="Diver">
+			</a>
+			<a href="img/4.jpg" title="Grass">
+				<img src="img/4.jpg" alt="Grass">
+			</a>
+			<a href="img/5.jpg" title="Tree">
+				<img src="img/5.jpg" alt="Tree">
+			</a>
+			<a href="img/6.jpg" title="Flowers">
+				<img src="img/6.jpg" alt="Flowers">
+			</a>
+			<a href="img/7.jpg" title="Flowers 2">
+				<img src="img/7.jpg" alt="Flowers 2">
+			</a>
+			<a href="img/4.jpg" title="Grass">
+				<img src="img/4.jpg" alt="Grass">
+			</a>
+	</div>
+</div>
+
+<script src="js/baguetteBox.js" async></script>
+<script src="js/highlight.min.js" async></script>
+
+<script>
+window.onload = function() {
+    baguetteBox.run('.baguetteBoxOne');
+
+    if (typeof oldIE === 'undefined' && Object.keys) {
+        hljs.initHighlighting();
+    }
+
+    var year = document.getElementById('year');
+    year.innerText = new Date().getFullYear();
+};
+</script>
+
+</body>
+</html>
+
+
